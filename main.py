@@ -11,6 +11,10 @@ config = ujson.loads(configs)
 print(config)
 f.close()
 
+# opens up index.html
+CONTENT = open('index.html', 'r').read()
+
+
 # sets up local network using config.json
 ap = network.WLAN(network.AP_IF)
 ap.active(True)
