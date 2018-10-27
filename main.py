@@ -14,5 +14,5 @@ ap = network.WLAN(network.AP_IF)
 ap.active(True)
 ap.config(essid=config['essid_name'], authmode=int(config['authtype']))
 
-if config['authtype'] != 0:
+if int(config['authtype']) != 0:
     ap.config(password=config['essid_password'])
