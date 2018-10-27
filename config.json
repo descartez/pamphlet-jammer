@@ -1,5 +1,5 @@
 {
   "essid_name":"Hello World",
-  "essid_password":"",
-  "authtype":"0"
+  "essid_password":"123456789",
+  "authmode_int":"0"
 }
