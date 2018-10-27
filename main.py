@@ -12,7 +12,7 @@ f.close()
 # sets up local network using config.json
 ap = network.WLAN(network.AP_IF)
 ap.active(True)
-ap.config(essid=config['essid'], authmode=config['authtype'])
+ap.config(essid=config['essid_name'], authmode=int(config['authtype']))
 
 if config['authtype'] != 0:
     ap.config(password=config['essid_password'])
